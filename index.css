@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+.logo{
+    margin-left: 30px;
+    height: 60px;
+    margin-right: 130px;
+}
+.nav-ul-text{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    list-style: none;
+}
+.nav-ul-icon{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 45px;
+    list-style: none;
+    margin-left: 10px;
+}
+.nav-li-icon{
+    margin-right: 30px;
+}
+.header{
+    position: relative;
+    height: 85%;
+    background-color: black;  
+    overflow: hidden;                      
+}
+.header-dots{
+    position: absolute;
+    display: none;
+    z-index: 10;
+    right: 0;
+}
+.header-movie{
+    position: absolute;
+    height: 50%;
+    z-index: 10;
+    right: 0;
+    margin-top: 12.5%;
+    
+}
+.header-blue-background{
+    position: absolute;
+    background-color: #023255;
+    height: 55%;
+    width: 100%;
+    bottom: 0;
+}
+.header-triangle{
+    top: -1%;
+    position: absolute;
+    margin-left: 20%;
+}
+.master-title-h1{
+    position: absolute;
+    font-size: 143px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    width: 600px;
+    text-shadow: 3px 10px 2px rgba(0, 0, 0, 0.25), 3px 14px 2px rgba(255, 240, 78, 0.48);
+    margin-left: 10%;
+    font-weight: bolder;
+    line-height: 1em;
+}
+.container-wave{
+    position: absolute;
+    display: none;
+}
+
+
