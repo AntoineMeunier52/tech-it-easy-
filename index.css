@@ -3,6 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+
 .nav{
     display: flex;
     justify-content: space-between;
@@ -80,5 +87,108 @@
     position: absolute;
     display: none;
 }
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    height: 33%;
+}
+
+.section2{
+    display : flex;
+    height: 33%;
+}
+
+.section3{
+    display: flex;
+    height: 33%;
+}
+
+.section-number1{
+    font-size: 46px;
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 14%;
+    margin-top: 9%;
+}
+
+.container1{
+    display: flex;
+}
+
+.secondary-title-paragraphe1{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 200%;
+}
+
+.element-secondary-title{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.yellow-background1{
+    position: absolute;
+    background-color: #fff04e;
+    height: 51px;
+    width: 385px;
+    left: 27%;
+    top: 0%;
+}
+
+.container-title1{
+    position: absolute;
+    font-size: 56px;
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 1);
+    left: 32%;
+    top: 0%;
+}
+
+.container-shadow-title1{
+    position: absolute;
+    font-size: 57px;
+    left: 32%;
+    top : -1%;
+    opacity: 55%;
+    color: black;
+    filter: blur(2px);
+}
+
+.blue-background1{
+    position: absolute;
+    background-color: #023255;
+    height: 45px;
+    width: 400px;
+    left: 30%;
+    top: 7%;
+}
+
+.paragraphe1{
+    top: 0%;
+    left: 0%;
+}
+
+.element-picture1{
+    position: relative;
+    left: 20%;
+}
+
+.picture1{
+    width: 50%;
+}
+
+
+
+
+
+
+
 
 
