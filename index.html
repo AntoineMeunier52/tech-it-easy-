@@ -6,102 +6,137 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="anime.min.js "></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
     <body>
-        <header class="header">
-            <img src="assets/platine.jpg" alt="" class="background-image">
-            <div class="nav">
-                <div class="nav-flex">
-                    <img src="assets/Logo_PNG.png" alt="logo" class="logo">
-                    <ul class="nav-ul-text">
-                        <li class="nav-li-text">NEWS</li>
-                        <li class="nav-li-text">TUTOS</li>
-                        <li class="nav-li-text">EVENT</li>
-                     </ul>
-                    <ul class="nav-ul-icon">
-                        <li class="nav-li-icon">
-                            <i class="fas fa-child"></i>
-                        </li>
-                        <li class="nav-li-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </li>
-                        <li class="nav-li-icon">
-                            <i class="fab fa-instagram"></i>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <h1 class="master-title-h1">VIENS FAIRE DES TUTOS</h1>
-            <div class="right-form">
-                <p class="text-header">Tu aimes partager des choses alors aide Tech It Easy en faisant des tutos!</p>
-            </div>
-            <div class="left-form"></div>
-        </header>
-        <main class="main">
-            <section class="section1">
-                <div class="separation1">
-                    <p class="section-number1">.01</p>
-                    <div class="white-line1"></div>
-                </div>
-                <div class="container1">
-                    <div class="secondary-title-paragraphe1">
-                        <div class="element-secondary-title1">
-                            <div class="yellow-background1"></div>
-                            <p class="container-shadow-title1">INSPIRE LES AUTRES</p>
-                            <div class="blue-background1"></div>
-                            <h2 class="container-title1">INSPIRE LES AUTRES</h2>
+        <div class="text-load"></div>
+            <svg id="logo" width="566" height="107" viewBox="0 0 566 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="0.728027" y="0.76001" width="566" height="106" fill="black">
+                <rect fill="white" x="0.728027" y="0.76001" width="566" height="106"/>
+                <path d="M18.288 17.6H1.72803V3.20001H50.688V17.6H34.128V104H18.288V17.6Z"/>
+                <path d="M58.3572 3.20001H101.557V17.6H74.1972V44.24H95.9412V58.64H74.1972V89.6H101.557V104H58.3572V3.20001Z"/>
+                <path d="M132.99 105.44C125.406 105.44 119.598 103.28 115.566 98.96C111.63 94.64 109.662 88.544 109.662 80.672V26.528C109.662 18.656 111.63 12.56 115.566 8.24001C119.598 3.92001 125.406 1.76001 132.99 1.76001C140.574 1.76001 146.334 3.92001 150.27 8.24001C154.302 12.56 156.318 18.656 156.318 26.528V37.184H141.342V25.52C141.342 19.28 138.702 16.16 133.422 16.16C128.142 16.16 125.502 19.28 125.502 25.52V81.824C125.502 87.968 128.142 91.04 133.422 91.04C138.702 91.04 141.342 87.968 141.342 81.824V66.416H156.318V80.672C156.318 88.544 154.302 94.64 150.27 98.96C146.334 103.28 140.574 105.44 132.99 105.44Z"/>
+                <path d="M165.795 3.20001H181.635V44.24H198.627V3.20001H214.467V104H198.627V58.64H181.635V104H165.795V3.20001Z"/>
+                <path d="M249.326 3.20001H265.166V104H249.326V3.20001Z"/>
+                <path d="M289.413 17.6H272.853V3.20001H321.813V17.6H305.253V104H289.413V17.6Z"/>
+                <path d="M352.545 3.20001H395.745V17.6H368.385V44.24H390.129V58.64H368.385V89.6H395.745V104H352.545V3.20001Z"/>
+                <path d="M417.097 3.20001H438.553L454.969 104H439.129L436.249 83.984V84.272H418.249L415.369 104H400.681L417.097 3.20001ZM434.377 70.592L427.321 20.768H427.033L420.121 70.592H434.377Z"/>
+                <path d="M482.824 105.44C475.144 105.44 469.336 103.28 465.4 98.96C461.464 94.544 459.496 88.256 459.496 80.096V74.336H474.472V81.248C474.472 87.776 477.208 91.04 482.68 91.04C485.368 91.04 487.384 90.272 488.728 88.736C490.168 87.104 490.888 84.512 490.888 80.96C490.888 76.736 489.928 73.04 488.008 69.872C486.088 66.608 482.536 62.72 477.352 58.208C470.824 52.448 466.264 47.264 463.672 42.656C461.08 37.952 459.784 32.672 459.784 26.816C459.784 18.848 461.8 12.704 465.832 8.38401C469.864 3.96801 475.72 1.76001 483.4 1.76001C490.984 1.76001 496.696 3.96801 500.536 8.38401C504.472 12.704 506.44 18.944 506.44 27.104V31.28H491.464V26.096C491.464 22.64 490.792 20.144 489.448 18.608C488.104 16.976 486.136 16.16 483.544 16.16C478.264 16.16 475.624 19.376 475.624 25.808C475.624 29.456 476.584 32.864 478.504 36.032C480.52 39.2 484.12 43.04 489.304 47.552C495.928 53.312 500.488 58.544 502.984 63.248C505.48 67.952 506.728 73.472 506.728 79.808C506.728 88.064 504.664 94.4 500.536 98.816C496.504 103.232 490.6 105.44 482.824 105.44Z"/>
+                <path d="M529.51 61.088L510.359 3.20001H527.206L538.007 40.208H538.294L549.094 3.20001H564.503L545.351 61.088V104H529.51V61.088Z"/>
+                </mask>
+                <path d="M18.288 17.6H1.72803V3.20001H50.688V17.6H34.128V104H18.288V17.6Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+                <path d="M58.3572 3.20001H101.557V17.6H74.1972V44.24H95.9412V58.64H74.1972V89.6H101.557V104H58.3572V3.20001Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+                <path d="M132.99 105.44C125.406 105.44 119.598 103.28 115.566 98.96C111.63 94.64 109.662 88.544 109.662 80.672V26.528C109.662 18.656 111.63 12.56 115.566 8.24001C119.598 3.92001 125.406 1.76001 132.99 1.76001C140.574 1.76001 146.334 3.92001 150.27 8.24001C154.302 12.56 156.318 18.656 156.318 26.528V37.184H141.342V25.52C141.342 19.28 138.702 16.16 133.422 16.16C128.142 16.16 125.502 19.28 125.502 25.52V81.824C125.502 87.968 128.142 91.04 133.422 91.04C138.702 91.04 141.342 87.968 141.342 81.824V66.416H156.318V80.672C156.318 88.544 154.302 94.64 150.27 98.96C146.334 103.28 140.574 105.44 132.99 105.44Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+                <path d="M165.795 3.20001H181.635V44.24H198.627V3.20001H214.467V104H198.627V58.64H181.635V104H165.795V3.20001Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+                <path d="M249.326 3.20001H265.166V104H249.326V3.20001Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+                <path d="M289.413 17.6H272.853V3.20001H321.813V17.6H305.253V104H289.413V17.6Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+                <path d="M352.545 3.20001H395.745V17.6H368.385V44.24H390.129V58.64H368.385V89.6H395.745V104H352.545V3.20001Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+                <path d="M417.097 3.20001H438.553L454.969 104H439.129L436.249 83.984V84.272H418.249L415.369 104H400.681L417.097 3.20001ZM434.377 70.592L427.321 20.768H427.033L420.121 70.592H434.377Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+                <path d="M482.824 105.44C475.144 105.44 469.336 103.28 465.4 98.96C461.464 94.544 459.496 88.256 459.496 80.096V74.336H474.472V81.248C474.472 87.776 477.208 91.04 482.68 91.04C485.368 91.04 487.384 90.272 488.728 88.736C490.168 87.104 490.888 84.512 490.888 80.96C490.888 76.736 489.928 73.04 488.008 69.872C486.088 66.608 482.536 62.72 477.352 58.208C470.824 52.448 466.264 47.264 463.672 42.656C461.08 37.952 459.784 32.672 459.784 26.816C459.784 18.848 461.8 12.704 465.832 8.38401C469.864 3.96801 475.72 1.76001 483.4 1.76001C490.984 1.76001 496.696 3.96801 500.536 8.38401C504.472 12.704 506.44 18.944 506.44 27.104V31.28H491.464V26.096C491.464 22.64 490.792 20.144 489.448 18.608C488.104 16.976 486.136 16.16 483.544 16.16C478.264 16.16 475.624 19.376 475.624 25.808C475.624 29.456 476.584 32.864 478.504 36.032C480.52 39.2 484.12 43.04 489.304 47.552C495.928 53.312 500.488 58.544 502.984 63.248C505.48 67.952 506.728 73.472 506.728 79.808C506.728 88.064 504.664 94.4 500.536 98.816C496.504 103.232 490.6 105.44 482.824 105.44Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+                <path d="M529.51 61.088L510.359 3.20001H527.206L538.007 40.208H538.294L549.094 3.20001H564.503L545.351 61.088V104H529.51V61.088Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+                </svg>  
+            <header class="header" id="header">
+                    <img src="assets/platine.jpg" alt="" class="background-image">
+                    <div class="nav">
+                        <div class="nav-flex">
+                            <img src="assets/Logo_PNG.png" alt="logo" class="logo">
+                            <ul class="nav-ul-text">
+                                <li class="nav-li-text">NEWS</li>
+                                <li class="nav-li-text">TUTOS</li>
+                                <li class="nav-li-text">EVENT</li>
+                             </ul>
+                            <ul class="nav-ul-icon">
+                                <li class="nav-li-icon">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </li>
+                                <li class="nav-li-icon">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </li>
+                                <li class="nav-li-icon">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </li>
+                            </ul>
                         </div>
-                        <p class="paragraphe1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
                     </div>
-                    <div class="element-picture1">
-                        <img src="" alt="dots" class="dots1">
-                        <img src="assets/app-photo-nature.jpg" alt="picture" class="picture1">
+                    <h1 class="master-title-h1">VIENS FAIRE DES TUTOS</h1>
+                    <div class="right-form">
+                        <p class="text-header">
+                            Tu aimes partager des choses alors aide Tech It Easy en faisant des tutos!
+                        </p>
                     </div>
-                </div>
-            </section>
-            <section class="section2">
-                <div class="separation2">
-                    <p class="section-number2">.02</p>
-                    <div class="white-line2"></div>
-                </div>
-                <div class="container2">
-                    <div class="secondary-title-paragraphe2">
-                        <div class="element-secondary-title2">
-                            <div class="yellow-background2"></div>
-                            <p class="container-shadow-title2">GAGNE EN VISIBILITE</p>
-                            <div class="blue-background2"></div>
-                            <h2 class="container-title2">GAGNE EN VISIBILITE</h2>
+                    <div class="left-form">
+                    </div>
+            </header>
+            <section class="section1" id="section1">
+                    <div class="separation1">
+                        <p class="section-number1">.01</p>
+                        <div class="white-line1"></div>
+                    </div>
+                    <div class="container1">
+                        <div class="secondary-title-paragraphe1">
+                            <div class="element-secondary-title1">
+                                <div class="yellow-background1"></div>
+                                <p class="container-shadow-title1">INSPIRE LES AUTRES</p>
+                                <div class="blue-background1"></div>
+                                <h2 class="container-title1">INSPIRE LES AUTRES</h2>
+                            </div>
+                            <p class="paragraphe1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
                         </div>
-                        <p class="paragraphe2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </p>
-                    </div>
-                    <div class="element-picture2">
-                        <img src="" alt="dots" class="dots2">
-                        <img src="assets/app-photo-neon.jpg" alt="picture" class="picture2">    
-                    </div>
-                </div>
-            </section>
-            <section class="section3">
-                <div class="separation3">
-                    <p class="section-number3">.03</p>
-                    <div class="white-line3"></div>
-                </div>
-                <div class="container3">
-                    <div class="secondary-title-paragraphe3">
-                        <div class="element-secondary-title3">
-                            <div class="yellow-background3"></div>
-                            <p class="container-shadow-title3">DEVIENS REDACTEUR TECH IT</p>
-                            <div class="blue-background3"></div>
-                            <h2 class="container-title3">DEVIENS REDACTEUR TECH IT</h2> 
+                        <div class="element-picture1">
+                            <img src="assets/Trames_jaune.png" alt="dots" class="dots1">
+                            <img src="assets/app-photo-nature.jpg" alt="picture" class="picture1">
                         </div>
-                        <p class="paragraphe3">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <p>
                     </div>
-                    <div class="element-picture3">
-                        <img src="" alt="dots" class="dots3">
-                        <img src="assets/platine-mix.jpg" alt="picture" class="picture3">
-                    </div>
-                </div>
             </section>
-        </main>
+            <section class="section2" id="section2">
+                    <div class="separation2">
+                        <p class="section-number2">.02</p>
+                        <div class="white-line2"></div>
+                    </div>
+                    <div class="container2">
+                        <div class="secondary-title-paragraphe2">
+                            <div class="element-secondary-title2">
+                                <div class="yellow-background2"></div>
+                                <p class="container-shadow-title2">GAGNE EN VISIBILITE</p>
+                                <div class="blue-background2"></div>
+                                <h2 class="container-title2">GAGNE EN VISIBILITE</h2>
+                            </div>
+                            <p class="paragraphe2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </p>
+                        </div>
+                        <div class="element-picture2">
+                            <img src="assets/Trames_jaune.png" alt="dots" class="dots2">
+                            <img src="assets/app-photo-neon.jpg" alt="picture" class="picture2">    
+                        </div>
+                    </div>
+            </section>
+            <section class="section3" id="section3">
+                    <div class="separation3">
+                        <p class="section-number3">.03</p>
+                        <div class="white-line3"></div>
+                    </div>
+                    <div class="container3">
+                        <div class="secondary-title-paragraphe3">
+                            <div class="element-secondary-title3">
+                                <div class="yellow-background3"></div>
+                                <p class="container-shadow-title3">DEVIENS REDACTEUR TECH IT</p>
+                                <div class="blue-background3"></div>
+                                <h2 class="container-title3">DEVIENS REDACTEUR TECH IT</h2> 
+                            </div>
+                            <p class="paragraphe3">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <p>
+                        </div>
+                        <div class="element-picture3">
+                            <img src="assets/Trames_jaune.png" alt="dots" class="dots3">
+                            <img src="assets/platine-mix.jpg" alt="picture" class="picture3">
+                        </div>
+                    </div>
+            </section>
+            <section class="login-zone">
+             
+            </section>
         <script src="index.js"></script>
-    </body>
-</html>
+        </body>
+</html> 
