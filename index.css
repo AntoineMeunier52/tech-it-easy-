@@ -22,11 +22,11 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    animation: fill 0.5s ease forwards 4s;
+    animation: fill 0.5s linear forwards 4s;
     z-index: 10;
 }
 #logo mask{
-    animation: fill 0.5s ease forwards 4s;
+    animation: fill 0.5s linear forwards 4s;
 }
 #logo path:nth-child(2){
     stroke-dasharray: 299.5198974609375;
@@ -218,6 +218,10 @@ body{
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
+    flex-wrap: wrap;
+}
+.secondary-title-paragraphe1{
+    margin-right: 150px;
 }
 .element-secondary-title1{
     position: relative;
@@ -278,7 +282,6 @@ body{
     position: absolute;
     height: 550px;
     transform: rotate(6deg);
-    z-index: 1;
     right: -50px;
 }
 .picture1{
@@ -286,7 +289,6 @@ body{
     height: 450px;
     margin-top: 50px;
     transform: rotate(-6deg);
-    z-index: 2;
     right: -70px;
 
 }
@@ -307,7 +309,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 70px 40px 70px 40px;
+    margin: 70px 40px 100px 40px;
 }
 .section-number2{
         font-size: 40px;
@@ -376,15 +378,19 @@ body{
     font-family: 'Bebas Neue', cursive;
 }
 .element-picture2{
-
+    position: relative;
+    right: -50px;
 }
 .dots2{
- display: none;
+    position: absolute;
+    height: 550px;
+    transform: rotate(-6deg);
+    right: -10px;
 }
 .picture2{
     height: 450px;
     margin-top: 50px;
-    transform: rotate(6deg)
+    transform: rotate(6deg);
 }
 
 
@@ -471,48 +477,37 @@ body{
     font-family: 'Bebas Neue', cursive;
 }
 .element-picture3{
-
+    position: relative;
+    right: -50px;
 }
 .dots3{
- display: none;
+    position: absolute;
+    height: 520px;
+    transform: rotate(6deg);
+    right: -10px;
 }
 .picture3{
-    height: 450px;
+    height: 400px;
     margin-top: 50px;
-    transform: rotate(-6deg)
+    transform: rotate(-6deg);
+    
+}
+.ham{
+    display: none;
+}
+.navbar-mobile{
+    display: none;
 }
 
 
 
-
-
-@media screen and (max-width: 991.98px){
-    .header{
-        position: relative;
+@media screen and (max-width: 1200px){
+    .header{ 
         height: 50vh;
-        background-color: black;  
-        overflow: hidden;                      
-    }
-    .right-form{
-        display: none;
-    }
-    .left-form{
-        display: none;
-    }
-}
-
-
-
-
-
-
-@media screen and (max-width: 575.98px){
-    .header{
-        position: relative;
-        height: 40vh;
         width: 100%;
-        background-color: black;  
-        overflow: hidden;                      
+    } 
+    .master-title-h1{
+        top: 15vh;
     }
     .right-form{
         display: none;
@@ -526,106 +521,629 @@ body{
     #logo{
         display: none;
     }
+    .nav-ul-text{
+        display: none;
+    }
+    .nav-ul-icon{
+        display: none;
+    }
+      
+    .ham {
+      position: absolute;
+      display: block;
+      z-index: 1000;
+      top: 20px;
+      right: 20px;
+      width: 36px;
+      height: 36px;
+      border: none;
+      cursor: pointer;
+      background-color: transparent;
+      background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+      background-size: 100%;
+    }
+    .showClose {
+      background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+    }
+    
+    .navbar-mobile {
+        display: block;
+      position: absolute;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      background-color: #5e5e5e;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      color: black;
+      transform: translateY(-100%);
+      transition: transform 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .navbar-mobile-icon{
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        font-size: 2rem;
+    }
+    
+    .showNav {
+      transform: translateY(0);
+    }
+    
+    .navbar-mobile ul {
+      width: 100%;
+      height: 100%;
+      list-style: none;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+
+    }
+    
+    .navbar-mobile ul li a {
+      color: black;
+      padding-bottom: 10px;
+      border-bottom: 2px solid black;
+      text-decoration: none;
+      font-family:  'Bebas Neue', cursive;
+      font-size: 2rem;
+    }
+    
+    .navbar-mobile ul li a:hover, .navbar-mobile ul li a:focus {
+      border-bottom: 2px solid white;
+    }
+
     .section1{
-        position: relative;
-        height: 100vh;
         width: 100%;
-        background-color: #171717;
+        height: 120vh;
         display: flex;
         flex-direction: column;
     }
     .separation1{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 70px 40px 70px 40px;
+        margin: 30px 40px 30px 40px;
     }
     .section-number1{
-            font-size: 40px;
-            font-family: 'Bebas Neue', cursive;
+            font-size: 30px;
     }
     .white-line1{
-        width: 95%;
-        height: 6px;
-        background-color: white;
+        height: 3px;
         margin-top: 21px;
     }
     .container1{
         display: flex;
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 20px;
     }
-    .element-secondary-title1{
-        position: relative;
-        width: 470px;
-        height: 85px;
+    .secondary-title-paragraphe1{
+        margin-right: 0;
+    }
+    .element-secondary-title1{ 
+        width: 100%;
+        height: 70px;
     }
     .yellow-background1{
-        position: absolute;
-        background-color: #fff04e;
-        height: 65px;
-        width: 500px;
-        right: 0px;
+        height: 55px;
+        width: 80%;
+        right: 30px;
         bottom: 20px;
     }
     .container-shadow-title1{
-        position: absolute;
-        width: 470px;
-        font-size: 71px;
-        font-weight: bolder;
-        margin: auto;
-        font-family: 'Bebas Neue', cursive;
-        color: rgba(0, 0, 0, 0.8);
-        filter: blur(4px);
-        left: 5px;
+        width: 100%;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        left: 6px;
         bottom: 5px;
     }
     .blue-background1{
-        position: absolute;
-        background-color: #023255;
-        height: 60px;
-        width: 500px;
-        left: -10px;
+        height: 50px;
+        width: 80%;
+        left: 30px;
         top: 22px;
     }
     .container-title1{
-        position: absolute;
-        width: 470px;
-        font-size: 71px;
-        font-weight: bolder;
-        margin: auto;
-        font-family: 'Bebas Neue', cursive;
-        color: white;
-        text-shadow: 4px 4px black;
+        width: 100%;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+ 
     }
     .paragraphe1{
-        margin-top: 50px;
-        font-size: 50px;
-        height: 500px;
-        width: 500px;
-        font-family: 'Bebas Neue', cursive;
+        font-size: 30px;
+        width: 90%;
+        height: 210px;
+        margin: auto;
+        margin-top: 30px;
+        text-align: center;
     }
     .element-picture1{
         position: relative;
-        right: -50px;
+        width: 100%;
+        height: 300px;
+        right: 0;
+        display: flex;
+        justify-content: center;
     }
     .dots1{
-        position: absolute;
-        height: 550px;
-        transform: rotate(6deg);
-        z-index: 1;
-        right: -50px;
+        height: 380px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-top: 40px;
     }
     .picture1{
-        position: absolute;
-        height: 450px;
-        margin-top: 50px;
-        transform: rotate(-6deg);
-        z-index: 2;
-        right: -70px;
-    
+        height: 330px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
     }
 
-} 
+
+    .section2{
+        width: 100%;
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .separation2{
+        margin: 30px 40px 30px 40px;
+    }
+    .section-number2{
+            font-size: 30px;
+    }
+    .white-line2{
+        height: 3px;
+        margin-top: 21px;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .element-secondary-title2{ 
+        width: 100%;
+        height: 70px;
+    }
+    .yellow-background2{
+        height: 55px;
+        width: 80%;
+        right: 30px;
+        bottom: 20px;
+    }
+    .container-shadow-title2{
+        width: 100%;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        left: 6px;
+        bottom: 5px;
+    }
+    .blue-background2{
+        height: 50px;
+        width: 80%;
+        left: 30px;
+        top: 22px;
+    }
+    .container-title2{
+        width: 100%;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+ 
+    }
+    .paragraphe2{
+        font-size: 30px;
+        width: 90%;
+        height: 210px;
+        margin: auto;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .element-picture2{
+        position: relative;
+        width: 100%;
+        height: 300px;
+        right: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .dots2{
+        height: 380px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-top: 40px;
+    }
+    .picture2{
+        height: 330px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+
+
+    .section3{
+        width: 100%;
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .separation3{
+        margin: 30px 40px 30px 40px;
+    }
+    .section-number3{
+            font-size: 30px;
+    }
+    .white-line3{
+        height: 3px;
+        margin-top: 21px;
+    }
+    .container3{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .element-secondary-title3{ 
+        width: 100%;
+        height: 70px;
+    }
+    .yellow-background3{
+        height: 55px;
+        width: 80%;
+        right: 30px;
+        bottom: 20px;
+    }
+    .container-shadow-title3{
+        width: 100%;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        left: 6px;
+        bottom: 13px;
+    }
+    .blue-background3{
+        height: 50px;
+        width: 80%;
+        left: 30px;
+        top: 22px;
+    }
+    .container-title3{
+        width: 100%;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+ 
+    }
+    .paragraphe3{
+        font-size: 30px;
+        width: 90%;
+        height: 210px;
+        margin: auto;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .element-picture3{
+        position: relative;
+        width: 100%;
+        height: 300px;
+        right: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .dots3{
+        height: 380px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-top: 40px;
+    }
+    .picture3{
+        height: 330px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 575.98px){
+    .header{ 
+        height: 30vh;
+        width: 100%;
+    } 
+    .master-title-h1{
+        top: 15vh;
+    }
+    .right-form{
+        display: none;
+    }
+    .left-form{
+        display: none;
+    }
+    .text-load{
+        display: none;
+    }
+    #logo{
+        display: none;
+    }
+    .nav-ul-text{
+        display: none;
+    }
+    .nav-ul-icon{
+        display: none;
+    }
+
+    .section1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .separation1{
+        margin: 30px 40px 30px 40px;
+    }
+    .section-number1{
+            font-size: 30px;
+    }
+    .white-line1{
+        height: 3px;
+        margin-top: 21px;
+    }
+    .container1{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .secondary-title-paragraphe1{
+        margin-right: 0;
+    }
+    .element-secondary-title1{ 
+        width: 100%;
+        height: 70px;
+    }
+    .yellow-background1{
+        height: 55px;
+        width: 80%;
+        right: 30px;
+        bottom: 20px;
+    }
+    .container-shadow-title1{
+        width: 100%;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        left: 6px;
+        bottom: 13px;
+    }
+    .blue-background1{
+        height: 50px;
+        width: 80%;
+        left: 30px;
+        top: 22px;
+    }
+    .container-title1{
+        width: 100%;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+ 
+    }
+    .paragraphe1{
+        font-size: 30px;
+        width: 90%;
+        height: 210px;
+        margin: auto;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .element-picture1{
+        position: relative;
+        width: 100%;
+        height: 300px;
+        right: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .dots1{
+        height: 280px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-top: 40px;
+    }
+    .picture1{
+        height: 250px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+
+
+    .section2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .separation2{
+        margin: 30px 40px 30px 40px;
+    }
+    .section-number2{
+            font-size: 30px;
+    }
+    .white-line2{
+        height: 3px;
+        margin-top: 21px;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .element-secondary-title2{ 
+        width: 100%;
+        height: 70px;
+    }
+    .yellow-background2{
+        height: 55px;
+        width: 80%;
+        right: 30px;
+        bottom: 20px;
+    }
+    .container-shadow-title2{
+        width: 100%;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        left: 6px;
+        bottom: 13px;
+    }
+    .blue-background2{
+        height: 50px;
+        width: 80%;
+        left: 30px;
+        top: 22px;
+    }
+    .container-title2{
+        width: 100%;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+ 
+    }
+    .paragraphe2{
+        font-size: 30px;
+        width: 90%;
+        height: 210px;
+        margin: auto;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .element-picture2{
+        position: relative;
+        width: 100%;
+        height: 300px;
+        right: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .dots2{
+        height: 280px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-top: 40px;
+    }
+    .picture2{
+        height: 250px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+
+
+    .section3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .separation3{
+        margin: 30px 40px 30px 40px;
+    }
+    .section-number3{
+            font-size: 30px;
+    }
+    .white-line3{
+        height: 3px;
+        margin-top: 21px;
+    }
+    .container3{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .element-secondary-title3{ 
+        width: 100%;
+        height: 70px;
+    }
+    .yellow-background3{
+        height: 55px;
+        width: 80%;
+        right: 30px;
+        bottom: 20px;
+    }
+    .container-shadow-title3{
+        width: 100%;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        left: 6px;
+        bottom: 13px;
+    }
+    .blue-background3{
+        height: 50px;
+        width: 80%;
+        left: 30px;
+        top: 22px;
+    }
+    .container-title3{
+        width: 100%;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+ 
+    }
+    .paragraphe3{
+        font-size: 30px;
+        width: 90%;
+        height: 210px;
+        margin: auto;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .element-picture3{
+        position: relative;
+        width: 100%;
+        height: 300px;
+        right: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .dots3{
+        height: 280px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-top: 40px;
+    }
+    .picture3{
+        height: 250px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+}  
 
 
