@@ -42,6 +42,7 @@ TweenMax.from(".master-title-h1", 2.2, {
   ease: Expo.easeInOut
 });
 
+
 /*ScrollReveal().reveal('.element-secondary-title1', {
   delay: 1,
   duration: 600,
