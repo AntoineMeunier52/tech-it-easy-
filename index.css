@@ -1,21 +1,14 @@
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-<<<<<<< HEAD
-
-body {
-    background-color: black;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-}
-
-=======
 body{
     color: white;
     background-color: #171717;
     width: 100%;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .text-load{
@@ -115,7 +108,6 @@ body{
     width: 100%;
 
 }
->>>>>>> 9b69598554612484a7a119fa5ea1dff75f50f38e
 .nav{
     position: absolute;
     width: 100%;
@@ -494,6 +486,222 @@ body{
 
 
 
+.login-zone{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-title4{
+    font-size: 50px;
+}
+
+.separation4{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.paragraphe4{
+    width: 35%;
+    font-size: 35px;
+    padding-left: 10%;
+}
+
+.formulaire{
+    height: 50px;
+    width: 35%;
+}
+
+.form1{
+    width: 75%;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+    
+}
+
+.form2{
+    width: 75%;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+
+
+.form3{
+    width: 75%;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+
+
+/* Premier input*/
+
+.firstName-form input{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    background-color: #171717;
+    color: white;
+}
+
+.firstName-form label{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0%;
+    height: 100%;
+    color: white;
+    pointer-events: none;
+    border-bottom: 1px solid #023255;
+}
+
+.firstName-form label::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid #fff04e;
+    left: 0%;
+    bottom: -1%;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.content-firstName{
+    position: absolute;
+    bottom: 5px;
+    left: Opx;
+    transition: all 0.3s ease;
+}
+
+.firstName-form input:focus + .label-firstName .content-firstName,
+.firstName-form input:valid + .label-firstName .content-firstName{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #fff04e;
+}
+
+.firstName-form input:focus + .label-firstName::after,
+.firstName-form input:valid + .label-firstName::after{
+    transform: translateX(0%);
+}
+
+ /*deuxième input*/
+
+.lastName-form input{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    background-color: #171717;
+    color: white;
+}
+
+.lastName-form label{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0%;
+    height: 100%;
+    color: white;
+    pointer-events: none;
+    border-bottom: 1px solid #023255;
+}
+
+.lastName-form label::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid #fff04e;
+    left: 0%;
+    bottom: -1%;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.content-lastName{
+    position: absolute;
+    bottom: 5px;
+    left: Opx;
+    transition: all 0.3s ease;
+}
+.lastName-form input:focus + .label-lastName .content-lastName,
+.lastName-form input:valid + .label-lastName .content-lastName{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #fff04e;
+}
+
+.lastName-form input:focus + .label-lastName::after,
+.lastName-form input:valid + .label-lastName::after{
+    transform: translateX(0%);
+}
+
+/* Troisième input*/
+
+.email-form input{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    background-color: #171717;
+    color: white;
+}
+
+.email-form label{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0%;
+    height: 100%;
+    color: white;
+    pointer-events: none;
+    border-bottom: 1px solid #023255;
+}
+
+.email-form label::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid #fff04e;
+    left: 0%;
+    bottom: -1%;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.content-email{
+    position: absolute;
+    bottom: 5px;
+    left: Opx;
+    transition: all 0.3s ease;
+}
+
+.email-form input:focus + .label-email .content-email,
+.email-form input:valid + .label-email .content-email{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #fff04e;
+}
+
+.email-form input:focus + .label-email::after,
+.email-form input:valid + .label-email::after{
+    transform: translateX(0%);
+}
+
 
 
 @media screen and (max-width: 991.98px){
@@ -636,109 +844,4 @@ body{
     
     }
 
-} 
-
-.main{
-    display: flex;
-    flex-direction: column;
 }
-
-.section1{
-    display: flex;
-    flex-direction: column;
-    height: 33%;
-}
-
-.section2{
-    display : flex;
-    height: 33%;
-}
-
-.section3{
-    display: flex;
-    height: 33%;
-}
-
-.section-number1{
-    font-size: 46px;
-    font-family: 'Bebas Neue', cursive;
-    margin-left: 14%;
-    margin-top: 9%;
-}
-
-.container1{
-    display: flex;
-}
-
-.secondary-title-paragraphe1{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    width: 200%;
-}
-
-.element-secondary-title{
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 100px;
-}
-
-.yellow-background1{
-    position: absolute;
-    background-color: #fff04e;
-    height: 51px;
-    width: 385px;
-    left: 27%;
-    top: 0%;
-}
-
-.container-title1{
-    position: absolute;
-    font-size: 56px;
-    text-shadow: 3px 2px 0px rgba(0, 0, 0, 1);
-    left: 32%;
-    top: 0%;
-}
-
-.container-shadow-title1{
-    position: absolute;
-    font-size: 57px;
-    left: 32%;
-    top : -1%;
-    opacity: 55%;
-    color: black;
-    filter: blur(2px);
-}
-
-.blue-background1{
-    position: absolute;
-    background-color: #023255;
-    height: 45px;
-    width: 400px;
-    left: 30%;
-    top: 7%;
-}
-
-.paragraphe1{
-    top: 0%;
-    left: 0%;
-}
-
-.element-picture1{
-    position: relative;
-    left: 20%;
-}
-
-.picture1{
-    width: 50%;
-}
-
-
-
-
-
-
-
-
-
