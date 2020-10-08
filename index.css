@@ -105,7 +105,7 @@ body{
 .background-image{
     position: absolute;
     width: 100%;
-
+    filter: grayscale(100%);
 }
 .nav{
     position: absolute;
@@ -130,6 +130,18 @@ body{
     font-size: 30px;
     font-family: 'Bebas Neue', cursive;
     list-style: none;
+}
+.lien1:hover{
+    color: rgb(253, 255, 157);
+    text-decoration: underline;
+}
+.lien2:hover{
+    color: rgb(253, 255, 157);
+    text-decoration: underline;
+}
+.lien3:hover{
+    color: rgb(253, 255, 157);
+    text-decoration: underline;
 }
 .nav-ul-icon{
     display: flex;
@@ -287,13 +299,17 @@ body{
 }
 .picture1{
     position: absolute;
-    height: 450px;
+    height: 500px;
     margin-top: 50px;
     transform: rotate(-6deg);
     right: -70px;
+    filter: grayscale(100%);
 
 }
-
+.picture1:hover{
+    filter: none;
+    animation: 1s ease;
+}
 
 
 
@@ -387,11 +403,17 @@ body{
     height: 550px;
     transform: rotate(-6deg);
     right: -10px;
+    right: 0;
 }
 .picture2{
-    height: 450px;
+    height: 500px;
     margin-top: 50px;
     transform: rotate(6deg);
+    filter: grayscale(100%);
+}
+.picture2:hover{
+    filter: none;
+    animation: 1s ease;
 }
 
 
@@ -491,13 +513,48 @@ body{
     height: 400px;
     margin-top: 50px;
     transform: rotate(-6deg);
+    filter: grayscale(100%);
+
     
 }
+.picture3:hover{
+    filter: none;
+    animation: 1s ease;
+} 
+    
 
 .login-zone{
     display: flex;
     position: relative;
     height: 100vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-title4{
+    font-size: 50px;
+}
+
+
+.separation4{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.paragraphe4{
+    width: 35%;
+    font-size: 35px;
+    padding-left: 10%;
+}
+
+
+.login-zone{
+    display: flex;
+    position: relative;
+    height: 60vh;
     width: 100%;
     justify-content: space-around;
     align-items: center;
@@ -713,6 +770,7 @@ body{
     transform: translateX(0%);
 }
 
+
 .button-section {
     position: relative;
     top: 15px;
@@ -832,6 +890,7 @@ body{
     list-style: none;
     padding: 3px;
 }
+
 
 @media screen and (max-width: 1200px){
     .header{ 
@@ -1520,9 +1579,7 @@ body{
     .form3{
         width: 95%;
     }
+}
 
 
-
-
-
-}  
+    
