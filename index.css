@@ -7,6 +7,7 @@ body{
     color: white;
     background-color: #171717;
     width: 100%;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .text-load{
@@ -104,7 +105,7 @@ body{
 .background-image{
     position: absolute;
     width: 100%;
-
+    filter: grayscale(100%);
 }
 .nav{
     position: absolute;
@@ -129,6 +130,18 @@ body{
     font-size: 30px;
     font-family: 'Bebas Neue', cursive;
     list-style: none;
+}
+.lien1:hover{
+    color: rgb(253, 255, 157);
+    text-decoration: underline;
+}
+.lien2:hover{
+    color: rgb(253, 255, 157);
+    text-decoration: underline;
+}
+.lien3:hover{
+    color: rgb(253, 255, 157);
+    text-decoration: underline;
 }
 .nav-ul-icon{
     display: flex;
@@ -286,13 +299,17 @@ body{
 }
 .picture1{
     position: absolute;
-    height: 450px;
+    height: 500px;
     margin-top: 50px;
     transform: rotate(-6deg);
     right: -70px;
+    filter: grayscale(100%);
 
 }
-
+.picture1:hover{
+    filter: none;
+    animation: 1s ease;
+}
 
 
 
@@ -385,12 +402,17 @@ body{
     position: absolute;
     height: 550px;
     transform: rotate(-6deg);
-    right: -10px;
+    right: 0;
 }
 .picture2{
-    height: 450px;
+    height: 500px;
     margin-top: 50px;
     transform: rotate(6deg);
+    filter: grayscale(100%);
+}
+.picture2:hover{
+    filter: none;
+    animation: 1s ease;
 }
 
 
@@ -490,14 +512,320 @@ body{
     height: 400px;
     margin-top: 50px;
     transform: rotate(-6deg);
+    filter: grayscale(100%);
     
 }
+.picture3:hover{
+    filter: none;
+    animation: 1s ease;
+} 
+    
+
+
+
+.login-zone{
+    display: flex;
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-title4{
+    font-size: 50px;
+}
+
+.separation4{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.paragraphe4{
+    width: 35%;
+    font-size: 35px;
+    padding-left: 10%;
+}
+
+.formulaire{
+    height: 50px;
+    width: 35%;
+}
+
+.form1{
+    width: 75%;
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+    
+}
+
+.form2{
+    width: 75%;
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+}
+
+
+.form3{
+    width: 75%;
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+}
+
+
+/* Premier input*/
+
+.firstName-form input{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    background-color: #171717;
+    color: white;
+}
+
+.firstName-form label{
+    position: absolute;
+    font-size: 18px;
+    bottom: 0px;
+    width: 100%;
+    left: 0%;
+    height: 100%;
+    color: white;
+    pointer-events: none;
+    border-bottom: 1px solid #023255;
+}
+
+.firstName-form label::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid #fff04e;
+    left: 0%;
+    bottom: -1%;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.content-firstName{
+    position: absolute;
+    bottom: 5px;
+    left: Opx;
+    transition: all 0.3s ease;
+}
+
+.firstName-form input:focus + .label-firstName .content-firstName,
+.firstName-form input:valid + .label-firstName .content-firstName{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #fff04e;
+}
+
+.firstName-form input:focus + .label-firstName::after,
+.firstName-form input:valid + .label-firstName::after{
+    transform: translateX(0%);
+}
+
+ /*deuxième input*/
+
+.lastName-form input{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    background-color: #171717;
+    color: white;
+}
+
+.lastName-form label{
+    position: absolute;
+    font-size: 18px;
+    bottom: 0px;
+    width: 100%;
+    left: 0%;
+    height: 100%;
+    color: white;
+    pointer-events: none;
+    border-bottom: 1px solid #023255;
+}
+
+.lastName-form label::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid #fff04e;
+    left: 0%;
+    bottom: -1%;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.content-lastName{
+    position: absolute;
+    bottom: 5px;
+    left: Opx;
+    transition: all 0.3s ease;
+}
+.lastName-form input:focus + .label-lastName .content-lastName,
+.lastName-form input:valid + .label-lastName .content-lastName{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #fff04e;
+}
+
+.lastName-form input:focus + .label-lastName::after,
+.lastName-form input:valid + .label-lastName::after{
+    transform: translateX(0%);
+}
+
+/* Troisième input*/
+
+.email-form input{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    background-color: #171717;
+    color: white;
+}
+
+.email-form label{
+    position: absolute;
+    font-size: 18px;
+    bottom: 0px;
+    width: 100%;
+    left: 0%;
+    height: 100%;
+    color: white;
+    pointer-events: none;
+    border-bottom: 1px solid #023255;
+}
+
+.email-form label::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid #fff04e;
+    left: 0%;
+    bottom: -1%;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.content-email{
+    position: absolute;
+    bottom: 5px;
+    left: Opx;
+    transition: all 0.3s ease;
+}
+
+.email-form input:focus + .label-email .content-email,
+.email-form input:valid + .label-email .content-email{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #fff04e;
+}
+
+.email-form input:focus + .label-email::after,
+.email-form input:valid + .label-email::after{
+    transform: translateX(0%);
+}
+
+
+
 .ham{
     display: none;
 }
 .navbar-mobile{
     display: none;
 }
+
+.site-footer
+{
+  background-color: #171717;
+  border-top: 1px solid #fff04e;
+  border-radius: 1px;
+  height: 40vh;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color: white;
+  width: 100%;
+}
+
+.container4{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.first-column{
+    width: 45%;
+}
+
+.about-title{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff04e;
+    padding-bottom: 5px;
+}
+
+.links-title{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff04e;
+    padding-bottom: 5px;
+}
+
+.second-column{
+    width: 20%;
+}
+
+.links-list{
+    list-style: none;
+}
+
+.white-line4{
+    position: relative;
+    width: 95%;
+    height: 2px;
+    background-color: #fff04e;
+    left: 2.5%;
+    margin-bottom: 20px;
+}
+
+.container5{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.end-footer-left{
+    width: 35%;
+}
+
+.end-footer-right{
+    width: 30%;
+    padding-left: 10%;
+}
+
+.social-media-icon li{
+    display: inline-block;
+    list-style: none;
+    padding: 3px;
+}
+
 
 
 

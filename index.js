@@ -1,10 +1,12 @@
-
+window.onbeforeunload = function () {
+  window.scrollTo(0,0);
+};
 
 
 if (window.matchMedia("(min-width: 1200px)").matches){
 
-  TweenMax.to(".text-load", 2, {
-  delay: 4.3,
+    TweenMax.to(".text-load", 2, {
+    delay: 4.3,
   top: "-103%",
   ease: Expo.easeInOut
 });
@@ -48,6 +50,7 @@ if (window.matchMedia("(min-width: 1200px)").matches){
     ease: Expo.easeInOut
   });
 }
+
 else{
 }
 
@@ -69,4 +72,6 @@ menuLinks.forEach(
   function(menuLink) { 
     menuLink.addEventListener("click", toggleHamburger) 
   }
-)
+);
+
+
