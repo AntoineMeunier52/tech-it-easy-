@@ -23,12 +23,12 @@ if (window.matchMedia("(min-width: 1200px)").matches){
     translateY: "100vh",
     ease: Expo.easeInOut
   });
-
   TweenMax.from(".right-form", 1.1, {
     delay: 6,
     x: 1000,
     ease: Power4. easeOut,
   });
+
 
   TweenMax.from(".left-form", 1, {
     delay: 6,
