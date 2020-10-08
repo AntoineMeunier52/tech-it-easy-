@@ -713,7 +713,43 @@ body{
     transform: translateX(0%);
 }
 
+.button-section {
+    position: relative;
+    top: 15px;
+}
 
+.button-section input[type="button"], 
+.submit{
+	background: #171717;
+	padding: 8px 20px 8px 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font-family: 'Bebas Neue', cursive;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #023255;
+	font-size: 15px;
+}
+.button-section input[type="button"]:hover, 
+.submit:hover{
+    background: #fff04e;
+    color: black;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+.privacy-policy{
+	float: right;
+	width: 250px;
+    font-family: 'Bebas Neue', cursive;
+	color: white;
+	padding-top: 10px;
+	text-align: right;
+}
 
 .ham{
     display: none;
@@ -1440,4 +1476,53 @@ body{
         margin-left: auto; 
         margin-right: auto; 
     }
+
+    .login-zone{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .separation4{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+    }
+
+    .paragraphe4{
+        font-size: 16px;
+        padding-top: 45px;
+        width: 95%;
+    }
+
+    .formulaire{
+        align-self: flex-start;
+        position: relative;
+        left: 35%;
+    }
+
+    .site-footer{
+        position: relative;
+        height: 65vh;
+    }
+
+    .form1{
+        width: 95%;
+    }
+
+    .form2{
+        width: 95%;
+    }
+
+    .form3{
+        width: 95%;
+    }
+
+
+
+
+
 }  
